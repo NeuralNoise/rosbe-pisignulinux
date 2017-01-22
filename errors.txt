@@ -1,0 +1,87 @@
+efd4acb3fa0d local # sudo pisi bi /git/pspec.xml -d --ignore-safety --ignore-sandbox
+Building source package: rosbe
+DEBUG: InstallDB initialized in 0.000488996505737.
+Cannot find component.xml in upper directory, Source is now part of unknown component
+RosBE-Unix-2.1.2.tar.bz2 [cached]
+Unpacking archive(s)...
+ unpacked (/var/pisi/rosbe-2.1.2-1/work)
+Setting up source...
+Building source...
+Testing package...
+Installing...
+*******************************************************************************
+*         ReactOS Build Environment for Unix-based Operating Systems          *
+*                      Builder Tool for the Base package                      *
+*                      by Colin Finck <colin@reactos.org>                     *
+*                                                                             *
+*                                 Version 2.1.2                               *
+*******************************************************************************
+
+This script compiles and installs a complete Build Environment for building
+ReactOS.
+
+Checking for the needed tools...
+Checking for as... OK
+Checking for bison... OK
+Checking for flex... OK
+Checking for x86_64-pc-linux-gnu-gcc... OK
+Checking for x86_64-pc-linux-gnu-g++... OK
+Checking for grep... OK
+Checking for makeinfo... OK
+Checking for python... OK
+Checking for GNU Make... OK
+OK
+Checking for zlib... OK
+
+Installation Directory
+In which directory do you want to install it?
+Enter the path to the directory here or simply press ENTER to install it into the default directory.
+[/usr/local/RosBE] 
+
+The directory "/usr/local/RosBE" does not exist. The installation script will create it for you.
+
+Ready to start
+Ready to build and install the ReactOS Build Environment.
+Press Return to continue or Ctrl+C to exit.
+
+Building...
+Running "x86_64-pc-linux-gnu-gcc -s -o /usr/local/RosBE/bin/buildtime /var/pisi/rosbe-2.1.2-1/work/RosBE-Unix-2.1.2/tools/buildtime.c"... OK
+Running "x86_64-pc-linux-gnu-gcc -s -o /usr/local/RosBE/bin/cpucount /var/pisi/rosbe-2.1.2-1/work/RosBE-Unix-2.1.2/tools/cpucount.c"... OK
+Running "x86_64-pc-linux-gnu-gcc -s -o /usr/local/RosBE/bin/scut /var/pisi/rosbe-2.1.2-1/work/RosBE-Unix-2.1.2/tools/scut.c"... OK
+Extracting cmake... OK
+Running "../cmake/bootstrap --prefix=/usr/local/RosBE --parallel=5"... OK
+Running "/usr/bin/gmake -j 5"... OK
+Running "/usr/bin/gmake install"... OK
+Cleaning up cmake...
+Extracting binutils... OK
+Running "../binutils/configure --prefix=/usr/local/RosBE/i386 --with-sysroot=/usr/local/RosBE/i386 --target=i686-w64-mingw32 --disable-multilib --disable-werror --enable-lto --enable-plugins --with-zlib=yes"... OK
+Running "/usr/bin/gmake -j 5"... OK
+Running "/usr/bin/gmake install"... OK
+Cleaning up binutils...
+Extracting mingw_w64_headers... OK
+Running "../mingw_w64_headers/configure --prefix=/usr/local/RosBE/i386/i686-w64-mingw32 --host=i686-w64-mingw32"... OK
+Running "/usr/bin/gmake -j 5"... OK
+Running "/usr/bin/gmake install"... OK
+Running "ln -s -f /usr/local/RosBE/i386/i686-w64-mingw32 /usr/local/RosBE/i386/mingw"... OK
+Running "mkdir -p /usr/local/RosBE/i386/i686-w64-mingw32/lib"... OK
+Cleaning up mingw_w64_headers...
+Extracting gcc... OK
+Extracting gmp... OK
+Extracting mpc... OK
+Extracting mpfr... OK
+Running "ln -s /usr/local/RosBE/i386 ../gcc/winsup"... OK
+Running "../gcc/configure --target=i686-w64-mingw32 --prefix=/usr/local/RosBE/i386 --with-sysroot=/usr/local/RosBE/i386 --with-pkgversion=RosBE-Unix --enable-languages=c,c++ --enable-fully-dynamic-string --enable-checking=release --enable-version-specific-runtime-libs --enable-plugins --disable-shared --disable-multilib --disable-nls --disable-werror --with-gnu-ld --with-gnu-as"... OK
+Running "/usr/bin/gmake -j 5 all-gcc"... OK
+Running "/usr/bin/gmake install-gcc"... OK
+Running "/usr/bin/gmake install-lto-plugin"... OK
+Extracting mingw_w64_crt... OK
+Running "../mingw_w64_crt/configure --prefix=/usr/local/RosBE/i386/i686-w64-mingw32 --with-sysroot=/usr/local/RosBE/i386/i686-w64-mingw32 --host=i686-w64-mingw32"... FAILED
+Please take a look at the log file "/var/pisi/rosbe-2.1.2-1/work/RosBE-Unix-2.1.2/sources/build.log"
+If you did not do something wrong, please save the log file and contact the ReactOS Team.
+Aborted!
+DEBUG: return value for "bash /var/pisi/rosbe-2.1.2-1/work/RosBE-Unix-2.1.2/RosBE-Builder.sh" is 1
+*** 0 error(s), 1 warning(s)
+Program terminated.
+Command "bash /var/pisi/rosbe-2.1.2-1/work/RosBE-Unix-2.1.2/RosBE-Builder.sh" failed, return value was 1.
+Please use 'pisi help' for general help.
+efd4acb3fa0d local #
