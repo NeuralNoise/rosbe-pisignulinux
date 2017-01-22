@@ -1,0 +1,47 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PISI SYSTEM "http://www.pisilinux.org/projeler/pisi/pisi-spec.dtd">
+<PISI>
+    <Source>
+        <Name>rosbe</Name>
+        <Homepage>https://www.reactos.org/wiki/RosBE</Homepage>
+        <Packager>
+            <Name>PisiLinux Community</Name>
+            <Email>admins@pisilinux.org</Email>
+        </Packager>
+        <License>GPLv2</License>
+        <IsA>app:console</IsA>
+        <Summary>This is a suitable build environment you will need to building ReactOS.</Summary>
+        <Description>Currently ReactOS Source Code is able to be compiled using both open source (gcc, mingw, …), and Microsoft's compiler tools, with the official ReactOS Build Environment (RosBE) being recommended.</Description>
+        <Archive sha1sum="fa34cb2eab3c7ff71a13b08186bdb7621a0d31a1">http://kent.dl.sourceforge.net/project/reactos/RosBE-Unix/2.1.2/RosBE-Unix-2.1.2.tar.bz2</Archive>
+        <BuildDependencies>
+            <Dependency>binutils</Dependency>
+            <Dependency>bison</Dependency>
+            <Dependency>cmake</Dependency>
+            <Dependency>glibc</Dependency>
+            <Dependency>glibc-devel</Dependency>
+            <Dependency>kernel-headers</Dependency>
+            <Dependency>ninja</Dependency>
+            <Dependency>ncurses-devel</Dependency>
+            <Dependency>texinfo</Dependency>
+            <Dependency>zlib-devel</Dependency>
+        </BuildDependencies>
+    </Source>
+
+    <Package>
+        <Name>rosbe</Name>
+        <RuntimeDependencies>
+        </RuntimeDependencies>
+        <Files>
+        </Files>
+    </Package>
+
+    <History>
+        <Update release="1">
+            <Date>2016-11-25</Date>
+            <Version>2.1.2</Version>
+            <Comment>First release</Comment>
+            <Name>Erdem Ersoy</Name>
+            <Email>erdemersoy@live.com</Email>
+        </Update>
+    </History>
+</PISI>
