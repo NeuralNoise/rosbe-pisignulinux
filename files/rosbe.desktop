@@ -1,5 +1,6 @@
 [Desktop Entry]
 Type=Application
+Version=2.1.2
 Name=ReactOS Build Environment
 Name[tr]=ReactOS Yapım Ortamı
 Comment=Run ReactOS Build Environment
