@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Name=ReactOS Build Environment
+Name[tr]=ReactOS Yapım Ortamı
+Comment=Run ReactOS Build Environment
+Comment[tr]=ReactOS Yapım Ortamı'nı çalıştır
+Icon=rosbe
+Exec=bash "/usr/local/RosBE/RosBE.sh"
+Terminal=true
+Categories=Development;
+Keywords=ReactOS;
